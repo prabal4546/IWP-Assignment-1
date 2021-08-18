@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    /* Product Card*/
+    .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+/*product*/
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #042baa;
+  color: white;
+}
+
+/* MARK */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; 
+  background: #ccc;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 300px; 
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+/* */
+/* mark2*/
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* mark2*/
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="homePage.html">Home</a>
+  <a href="register.html">Account</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div style="padding-left:16px; text-align: center">
+  <h1>TRAVEL</h1>
+  <p>Explore the World</p>
+</div>
+<section>
+
+    
+    <article>
+      <h1>Travelling</h1>
+      <p>Traveling is one of the best way to enhance personal growth. It enables you to do things different from your daily routine activities. When you travel, you step out from your comfort zone to a different environment which makes you become more responsible and gives a sense of independence</p>
+    <p>Traveling gives the perfect opportunity to try out new,exciting and authentic delicacies from different parts of the world. Introducing you to unique flavors which you have neither tasted nor heard off and leaving you startled .Traveling without experiencing the local food is not complete in anyway. We all love traveling, leaving our comfort zone, sightseeing, meeting new people and creating endless amount of unforgettable memories. Yet, the best part of all is the food. Traveling provides you with a wide range of authentic flavor that you would be missing out if you did not travel to different corners of the world. </p>
+    </article>
+  </section>
+
+  <div class="clearfix">
+    <div class="img-container">
+        <img src="assets/clement-falize-9uNFBOXBEBc-unsplash.jpg" alt="Manhattan" style="width:100%">
+    </div>
+    <div class="img-container">
+        <img src="assets/izayah-ramos-cR05i3WgRlQ-unsplash.jpg" alt="Italy" style="width:100%">
+    </div>
+    <div class="img-container">
+        <img src="assets/henning-witzel-ukvgqriuOgo-unsplash.jpg" alt="Italy" style="width:100%">
+    </div>
+  </div>
+  <div class="card">
+    <img src="favorite.png" alt="Avatar" style="width:100%">
+    <div class="container">
+      <h4><b>John Doe</b></h4> 
+      <p>Architect & Engineer</p> 
+    </div>
+  </div>
+
+  <footer>
+    <p>19BCI0243<br>
+        <a style="color: blue;" href="https://github.com/prabal4546">Developer Info</a></p>
+  </footer>
+
+</body>
+</html>
