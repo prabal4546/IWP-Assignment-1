@@ -4,6 +4,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
+
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(221, 221, 221);
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #aa0404;
+    color: white;
+  }
+
 body{
   font-family: Calibri, Helvetica, sans-serif;
   background-color: pink;
@@ -48,6 +74,11 @@ hr {
 </style>
 </head>
 <body>
+  <div class="topnav">
+    <a  href="homePage.html">About Us</a>
+    <a class="active" href="register.html">Register</a>
+    <a href="shop.html">Shop</a>
+  </div>
 <form>
   <div class="container">
   <center>  <h1> Create a new account</h1> </center>
@@ -58,6 +89,8 @@ hr {
 <input type="text" name="middlename" placeholder="Middlename (optional)" size="15" required /> 
 <label> Lastname: </label>  
 <input type="text" name="lastname" placeholder="Lastname" size="15"required /> 
+
+ 
 
 <div>
 <label> 
@@ -73,7 +106,19 @@ Phone :
 </label>
 <input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/> 
 <input type="text" name="phone" placeholder="phone no." size="10"/ required> 
- Address :
+
+
+<label>   
+  Type :  
+  </label>   
+  <select>  
+  <option value="AddressType">Address</option>  
+  <option value="home">Home</option>  
+  <option value="work">Work</option>  
+  <option value="other">Other</option>  
+  </select> 
+
+ Address 
 <textarea cols="80" rows="5" placeholder="Current Address" value="address" required></textarea>
 <button type="submit" class="registerbtn">Register</button>  
 </form>
