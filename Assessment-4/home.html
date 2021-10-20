@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Submission Form</title>
+    <style>
+        body{background-color: #ffffe6; width:610px;}
+        h1 {color: #29a3a3;}
+        .inputbox {padding: 7px; border: #FF9966 1px solid; border-radius: 4px;}
+        .btn {padding: 10px; background-color: #29a3a3; border: solid 1px #FF9966; border-radius: 4px; color: #FFFFFF; font-weight: bolder; cursor: pointer;}
+    </style>
+    </head>
+<body>
+    <h1>Assignment Submission</h1>
+<form action="fileupload.php" method="post" enctype="multipart/form-data">
+    <fieldset><legend><strong>Student Information</strong></legend>
+    Name : <input class="inputbox" type="text" name="studentname" placeholder="Enter Your Name" /><br />
+    RegNo : <input class="inputbox" type="reg" name="studentnumber" placeholder="Registration Number" /><br />
+    Email : <input class="inputbox" type="email" name="user_email" placeholder="Enter Your Email" /><br />
+    <p>Date: <span id='date-time'></span>.</p>
+    </fieldset>
+    <br/>
+    <br/>
+    <fieldset><legend><strong>Course Selection</strong></legend>
+        Course:
+        <input type="radio" name="course" value="course2">VL2021220104045
+        <input type="radio" name="course" value="course1">VL2021220104192
+    </fieldset>
+    <br />
+    <br />
+    File
+    <input type="file" name="filetoupload" id="filetoupload"><br/>
+    <div>
+        <p>
+            <input name="reset" type="reset" tabindex="40" value="Clear Form" class="btn">
+            <input name="submit" type="submit" tabindex="50" value="Submit" class="btn">
+        </p>
+    </div>
+</form>
+<script type="text/javascript">
+
+var dt = new Date();
+document.getElementById('date-time').innerHTML=dt;
+   </script>
+</body>
+</html>
